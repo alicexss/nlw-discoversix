@@ -34,12 +34,11 @@
   height: 2rem;
 }
 
-/* Question form */
-
+/*** QUESTION FORM ***/
 #question-form h2 {
-  font-family: 'Poppin', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.8rem;
-  color: var(black);
+  color: var(--black);
   font-weight: 700;
   line-height: 4.2rem;
 
@@ -54,7 +53,7 @@
   margin-bottom: 1.6rem;
 }
 
-#question-form textarea {
+#question-form form textarea {
   resize: none;
   background: transparent;
 
@@ -76,6 +75,7 @@
 #question-form form footer > div {
   display: flex;
   align-items: center;
+
   color: var(--icons-details);
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -86,14 +86,13 @@
   margin-right: 0.9rem;
 }
 
-#question-form footer button {
+#question-form form footer button {
   height: auto;
   padding: 0.8rem 2.4rem;
   line-height: 2.4rem;
 }
 
-/* Questions */
-
+/******* Questions *****/
 .question-wrapper {
   background: var(--light-blue);
   margin-bottom: 0.8rem;
@@ -139,12 +138,34 @@
   margin-left: 2.4rem;
 }
 
-/* Question read */
-
+/***** Question Read ****/
 .question-wrapper.read {
   background: var(--grey-medium);
 }
 
 .question-wrapper.read .question-content .user {
   background: var(--grey-blue);
+}
+
+/*** No Questions   **/
+.no-questions {
+  text-align: center;
+  margin-top: 5.2rem;
+}
+.no-questions img {
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+}
+.no-questions p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.no-questions p + p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1.3rem;
+  line-height: 1.9rem;
+  color: var(--grey-blue);
 }
